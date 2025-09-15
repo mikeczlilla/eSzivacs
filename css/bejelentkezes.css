@@ -1,0 +1,22 @@
+body {
+  background-color: #1b263b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#kartya1 {
+  width: 1000px;
+  margin: 100px auto auto auto;
+}
+
+form {
+  margin: auto;
+}
+#ad {
+  width: 500px;
+}
+#cimsor {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: fit-content;
+}

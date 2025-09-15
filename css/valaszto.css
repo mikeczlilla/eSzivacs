@@ -1,0 +1,25 @@
+body {
+  background-color: #1b263b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#kartya1 {
+  width: 1000px;
+  margin: 100px auto auto auto;
+}
+
+button {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+}
+
+#center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logopng {
+  border-radius: 10px;
+  height: 200px;
+}
