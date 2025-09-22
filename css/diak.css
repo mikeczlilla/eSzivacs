@@ -1,0 +1,14 @@
+
+body {
+    background-color: #1b263b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  #kartya1 {
+    max-width: 1800px;
+    margin: 100px auto auto auto;
+  }
+#osztalyokDiv{
+    width: 300px;
+    margin: 10px auto 10px auto;
+}
