@@ -12,3 +12,21 @@ body {
     width: 300px;
     margin: 10px auto 10px auto;
 }
+table,tr,td{
+  border-style: solid;
+  border-width: 2px;
+  border-collapse: collapse;
+  font-size: 20px;
+  border-color: rgb(118, 166, 221);
+  background-color:  rgba(118, 202, 228, 0.795);
+  margin: 35px;
+  
+  
+}
+td{
+ text-align: center;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
