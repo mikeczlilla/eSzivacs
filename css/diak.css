@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 72847a8e1d54d753154bf02bb00ee6b928e2cbf4
 body {
     background-color: #1b263b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -14,4 +11,26 @@ body {
 #osztalyokDiv{
     width: 300px;
     margin: 10px auto 10px auto;
+}
+table,tr,td{
+  border-style: solid;
+  border-width: 2px;
+  border-collapse: collapse;
+  font-size: 20px;
+  border-color: rgb(118, 166, 221);
+  background-color:  rgba(118, 202, 228, 0.795);
+  margin: 35px;
+  
+  
+}
+td{
+ text-align: center;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+h1{
+  color: white;
+  text-align: center;
 }
