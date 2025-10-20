@@ -1,22 +1,27 @@
 body {
     background-color: #1b263b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+}
 
-h1,h2{
+h1,
+h2 {
     text-align: center;
     color: white;
 }
-table,tr,td{
-     border-style: solid;
-     border-width: 2px;
-     border-collapse: collapse;
-     font-size: 20px;
-     border-color: rgb(118, 166, 221);
-     background-color:  rgba(118, 202, 228, 0.795);
-     margin: auto;
-     
+
+table,
+tr,
+td {
+    border-style: solid;
+    border-width: 2px;
+    border-collapse: collapse;
+    font-size: 20px;
+    border-color: rgb(118, 166, 221);
+    background-color: rgba(118, 202, 228, 0.795);
+    margin: auto;
+
 }
-td{
+
+td {
     text-align: center;
 }
