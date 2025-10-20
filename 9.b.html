@@ -1,336 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>eSzivacs</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/diak.css" />
-    
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>eSzivacs</title>
 
-    <link rel="icon" type="image/png" href="kep/logo.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
-  <body>
-    <div id="vmi4">
-      <div class="list-group">
-        <a href="index.html"
-            ><button type="button" class="btn btn-secondary">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-left"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
-                />
-              </svg>
-              Vissza
-            </button></a
-          >
-              <button type="button" style="cursor:default" class="list-group-item list-group-item-action active" aria-current="true">
-                Osztályok
-              </button>
-              <a href="9.a.html"><button type="button" class="list-group-item list-group-item-action btn btn-outline-primary">9.A</button></a>
-              <a href="9.b.html"><button type="button" class="list-group-item list-group-item-action btn btn-outline-primary">9.B</button></a>
-              <a href="10.a.html"><button type="button" class="list-group-item list-group-item-action btn btn-outline-primary">10.A</button></a>
-              <a href="10.b.html"><button type="button" class="list-group-item list-group-item-action btn btn-outline-primary">10.B</button></a>
-              <a href="11.a.html"><button type="button" class="list-group-item list-group-item-action btn btn-outline-primary">11.A</button></a>
-              <a href="11.b.html"><button type="button" class="list-group-item list-group-item-action btn btn-outline-primary">11.B</button></a>
-              <a href="12.a.html"><button type="button" class="list-group-item list-group-item-action btn btn-outline-primary">12.A</button></a>
-              <a href="12.b.html"><button type="button" class="list-group-item list-group-item-action btn btn-outline-primary">12.B</button></a>
-              <a href="13.a.html"><button type="button" class="list-group-item list-group-item-action btn btn-outline-primary">13.A</button></a>
-              <a href="13.b.html"><button type="button" class="list-group-item list-group-item-action btn btn-outline-primary">13.B</button></a>
-            </div>
-          </div>
-    
-    <style>
-      body {
-          font-family: Arial, sans-serif;
-          margin: 20px;
-      }
-      .timetable-container {
-          overflow-x: auto;
-      }
-      table {
-          border-collapse: collapse;
-          width: 100%;
-          max-width: 1400px;
-          margin: 0 auto;
-          background-color: white;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      }
-      th, td {
-          border: 1px solid #ccc;
-          padding: 5px;
-          text-align: center;
-          font-size: 20px;
-          height: 70px;
-          vertical-align: top; 
-      }
-      th {
-          background-color: #e0e0e0;
-          font-weight: bold;
-      }
-      .time-slot {
-          width: 70px; 
-          font-size: 18px;
-          font-weight: bold;
-      }
-      .day-label {
-          width: 40px; 
-          background-color: #f0f0f0 !important;
-          font-weight: bold;
-          text-align: left;
-          padding-left: 10px;
-      }
-      
-      .color-blue { background-color: #9cd5f5; } 
-      .color-green { background-color: #b8e7b8; } 
-      .color-yellow { background-color: #ffe08a; } 
-      .color-purple { background-color: #d1b3e8; } 
-      .color-red { background-color: #ffb5b5; } 
-      .color-pink { background-color: #f7c3e2; } 
-      .color-orange { background-color: #ffc999; } 
-  
-     
-      .subject-name {
-          font-weight: bold;
-          font-size: 17px;
-          display: block;
-          margin-bottom: 2px;
-      }
-      .teacher-classroom {
-          font-size: 9px;
-          display: block;
-          line-height: 1.1;
-      }
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/diak.css" />
+
+  <link rel="icon" type="image/png" href="kep/logo.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body>
+  <div id="vmi4">
+    <div class="list-group">
+      <a href="index.html"><button type="button" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+          </svg>
+          Vissza
+        </button></a>
+      <button type="button" style="cursor:default" class="list-group-item list-group-item-action active"
+        aria-current="true">
+        Osztályok
+      </button>
+      <a href="9.a.html"><button type="button"
+          class="list-group-item list-group-item-action btn btn-outline-primary">9.A</button></a>
+      <a href="9.b.html"><button type="button"
+          class="list-group-item list-group-item-action btn btn-outline-primary">9.B</button></a>
+      <a href="10.a.html"><button type="button"
+          class="list-group-item list-group-item-action btn btn-outline-primary">10.A</button></a>
+      <a href="10.b.html"><button type="button"
+          class="list-group-item list-group-item-action btn btn-outline-primary">10.B</button></a>
+      <a href="11.a.html"><button type="button"
+          class="list-group-item list-group-item-action btn btn-outline-primary">11.A</button></a>
+      <a href="11.b.html"><button type="button"
+          class="list-group-item list-group-item-action btn btn-outline-primary">11.B</button></a>
+      <a href="12.a.html"><button type="button"
+          class="list-group-item list-group-item-action btn btn-outline-primary">12.A</button></a>
+      <a href="12.b.html"><button type="button"
+          class="list-group-item list-group-item-action btn btn-outline-primary">12.B</button></a>
+      <a href="13.a.html"><button type="button"
+          class="list-group-item list-group-item-action btn btn-outline-primary">13.A</button></a>
+      <a href="13.b.html"><button type="button"
+          class="list-group-item list-group-item-action btn btn-outline-primary">13.B</button></a>
+    </div>
+  </div>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .timetable-container {
+      overflow-x: auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 5px;
+      text-align: center;
+      font-size: 20px;
+      height: 70px;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #e0e0e0;
+      font-weight: bold;
+    }
+
+    .time-slot {
+      width: 70px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .day-label {
+      width: 40px;
+      background-color: #f0f0f0 !important;
+      font-weight: bold;
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    .color-blue {
+      background-color: #9cd5f5;
+    }
+
+    .color-green {
+      background-color: #b8e7b8;
+    }
+
+    .color-yellow {
+      background-color: #ffe08a;
+    }
+
+    .color-purple {
+      background-color: #d1b3e8;
+    }
+
+    .color-red {
+      background-color: #ffb5b5;
+    }
+
+    .color-pink {
+      background-color: #f7c3e2;
+    }
+
+    .color-orange {
+      background-color: #ffc999;
+    }
+
+
+    .subject-name {
+      font-weight: bold;
+      font-size: 17px;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .teacher-classroom {
+      font-size: 9px;
+      display: block;
+      line-height: 1.1;
+    }
   </style>
   </head>
-  <body>
-  
-  <h1>9. B Órarend</h1>
-  
-  <div class="timetable-container">
-      <table>
-          <thead>
-              <tr>
-                  <th class="time-slot" rowspan="2"></th>
-                  <th class="time-slot">1.</th>
-                  <th class="time-slot">2.</th>
-                  <th class="time-slot">3.</th>
-                  <th class="time-slot">4.</th>
-                  <th class="time-slot">5.</th>
-                  <th class="time-slot">6.</th>
-                  <th class="time-slot">7.</th>
-                  <th class="time-slot">8.</th>
-              </tr>
-              <tr>
-                  <th>8:00-8:45</th>
-                  <th>8:50-9:35</th>
-                  <th>9:50-10:35</th>
-                  <th>10:45-11:30</th>
-                  <th>11:40-12:25</th>
-                  <th>12:35-13:20</th>
-                  <th>13:25-14:10</th>
-                  <th>14:15-15:00</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td class="day-label">Hétfő</td>
-                  <td class="color-blue">
-                      <span class="subject-name">
-                        <br> <br>Fennt</span>
-                      
-                  </td>
-                  <td class="color-purple">
-                      <span class="subject-name"><br>Mat
-                      <br> <br> Mat</span>
-                     
-                  </td>
-                  <td class="color-green">
-                      <span class="subject-name">Ang <br> <br> Ang <br> <br>Ném</span>
-                      
-                  </td>
-                  <td class="color-blue">
-                      <span class="subject-name">
-                         <br> <br>Tesi
-                      </span>
-                      
-                  </td>
-                  <td class="color-yellow">
-                      <span class="subject-name">IKTproI
-                        <br> IKTproI <br> IKTproI <br> Villalap <br> Gépalgy
-                      </span>
-                      
-                  </td>
-                  <td class="color-yellow">
-                      <span class="subject-name">Munkism
-                        <br> Munkism <br> Villalap <br> <br> Gépalagy
-                      </span>
-                      
-                  </td>
-                
-                  </td>
-                  <td class="color-yellow">
-                    <span class="subject-name">Ita i inf</span>
-                    <span class="subject-name">Progal</span>
-                    <span class="subject-name">Ita i inf</span>
-                    <span class="subject-name">Gépal</span>
-                      
-                  </td>
-                  <td class="color-yellow">
-                    <span class="subject-name">Ita i inf</span>
-                    <span class="subject-name">Progal</span>
-                    <span class="subject-name">Ita i inf</span>
-                    <span class="subject-name">Gépal</span>
-                    
-                </td>
-              </tr>
-              <tr>
-                  <td class="day-label">Kedd</td>
-                  <td class="color-green">
-                      <span class="subject-name">Digk <br> <br> Digk</span>
-                  </td>
-                  <td class="color-green">
-                    <span class="subject-name">Digk <br> <br>Digk</span>
-                  </td>
-                  <td class="color-red">
-                    <span class="subject-name">Mat <br>  <br>Mat</span>
-                  </td>
-                  <td class="color-pink">
-                      <span class="subject-name"> <br>Töri</span>
-                    
-                  </td>
-                  <td class="color-blue">
-                      <span class="subject-name"><br>Tesi</span>
-                  </td>
-                  <td class="color-green">
-                    <span class="subject-name"><br>Tesi</span>
 
-                  </td>
-                  
-                  <td></td> </tr>
-              <tr>
-                  <td class="day-label">Szerda</td>
-                  <td class="color-blue">
-                      <span class="subject-name"><br> <br>Kktt</span>
-                  </td>
-                  <td class="color-orange">
-                      <span class="subject-name"> <br><br>Magy</span>
-                  </td>
-                  <td class="color-blue">
-                      <span class="subject-name"> <br><br>Magy</span>
-                  </td>
-                  <td class="color-blue">
-                      <span class="subject-name">Ang</span>
-                      <br>
-                      <span class="subject-name">Ang
-                      </span>
-                      <br>
-                      <span class="subject-name">Ném</span>
-                      
-                  </td>
-                  <td class="color-blue">
-                      <span class="subject-name"><br> <br> Honv</span>
-                  </td>
-                  <td class="color-yellow">
-                    <span class="subject-name">Progal2</span>
-                    <span class="subject-name">Ita i Inf2</span>
-                    <span class="subject-name">Progal2</span>
-                    <span class="subject-name">Gépalgy</span>
-                    <span class="subject-name">Villalap</span>
-                  </td>
-                  <td class="color-yellow">
-                      <span class="subject-name">Progal2</span>
-                      <span class="subject-name">Ita i Inf2</span>
-                      <span class="subject-name">Progal2</span>
-                      <span class="subject-name">Gépalgy</span>
-                      <span class="subject-name">Villalap</span>
-  
-                  </td>
-                  <td></td> </tr>
-              <tr>
-                  <td class="day-label">Csütörtök</td>
-                  <td class="color-yellow">
-                      <span class="subject-name">  <br><br>Töri</span>
-                  </td>
-                  <td class="color-green">
-                      <span class="subject-name"> <br><br>Ofő</span>
-                  </td>
-                  <td class="color-orange">
-                      <span class="subject-name">Ang</span>
-                      <br>
-                      <span class="subject-name">Ang</span>
-                      <br>
-                      <span class="subject-name">Ném</span> 
-                  </td>
-                  <td class="color-green">
-                      <span class="subject-name"><br> <br>Magy</span>
-                  </td>
-                  <td class="color-blue">
-                      <span class="subject-name"> <br> <br> Tesi</span>
-                  </td>
-                  <td class="color-green">
-                      <span class="subject-name"> <br> <br>Fiz</span>
-                  </td>
-                  <td class="color-blue">
-                    <span class="subject-name">  <br>Mat <br> <br> Mat</span>
-                </td>
-                  
-            </tr>
-              <tr>
-                  <td class="day-label">Péntek</td>
-                  <td class="color-yellow">
-                      <span class="subject-name">Ita i ele</span>
-                  </td>
-                  <td class="color-yellow">
-                      <span class="subject-name">Kktt</span>
-                  </td>
-                  <td class="color-green">
-                      <span class="subject-name">Tesi</span>
-                  </td>
-                  <td class="color-blue">
-                      <span class="subject-name">Ang</span>
-                  </td>
-                  <td class="color-green">
-                      <span class="subject-name">Mat</span>
-                  </td>
-                  <td class="color-green">
-                      <span class="subject-name">Magy</span>
-                  </td>
-                  <td></td> <td></td> </tr>
-          </tbody>
+  <body>
+
+    <h1>9. B Órarend</h1>
+
+    <div class="timetable-container">
+      <table>
+        <thead>
+          <tr>
+            <th class="time-slot" rowspan="2"></th>
+            <th class="time-slot">1.</th>
+            <th class="time-slot">2.</th>
+            <th class="time-slot">3.</th>
+            <th class="time-slot">4.</th>
+            <th class="time-slot">5.</th>
+            <th class="time-slot">6.</th>
+            <th class="time-slot">7.</th>
+            <th class="time-slot">8.</th>
+          </tr>
+          <tr>
+            <th>8:00-8:45</th>
+            <th>8:50-9:35</th>
+            <th>9:50-10:35</th>
+            <th>10:45-11:30</th>
+            <th>11:40-12:25</th>
+            <th>12:35-13:20</th>
+            <th>13:25-14:10</th>
+            <th>14:15-15:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="day-label">Hétfő</td>
+            <td class="color-blue">
+              <span class="subject-name">
+                <br> <br>Fennt</span>
+
+            </td>
+            <td class="color-purple">
+              <span class="subject-name"><br>Mat
+                <br> <br> Mat</span>
+
+            </td>
+            <td class="color-green">
+              <span class="subject-name">Ang <br> <br> Ang <br> <br>Ném</span>
+
+            </td>
+            <td class="color-blue">
+              <span class="subject-name">
+                <br> <br>Tesi
+              </span>
+
+            </td>
+            <td class="color-yellow">
+              <span class="subject-name">IKTproI
+                <br> IKTproI <br> IKTproI <br> Villalap <br> Gépalgy
+              </span>
+
+            </td>
+            <td class="color-yellow">
+              <span class="subject-name">Munkism
+                <br> Munkism <br> Villalap <br> <br> Gépalagy
+              </span>
+
+            </td>
+
+            </td>
+            <td class="color-yellow">
+              <span class="subject-name">Ita i inf</span>
+              <span class="subject-name">Progal</span>
+              <span class="subject-name">Ita i inf</span>
+              <span class="subject-name">Gépal</span>
+
+            </td>
+            <td class="color-yellow">
+              <span class="subject-name">Ita i inf</span>
+              <span class="subject-name">Progal</span>
+              <span class="subject-name">Ita i inf</span>
+              <span class="subject-name">Gépal</span>
+
+            </td>
+          </tr>
+          <tr>
+            <td class="day-label">Kedd</td>
+            <td class="color-green">
+              <span class="subject-name">Digk <br> <br> Digk</span>
+            </td>
+            <td class="color-green">
+              <span class="subject-name">Digk <br> <br>Digk</span>
+            </td>
+            <td class="color-red">
+              <span class="subject-name">Mat <br> <br>Mat</span>
+            </td>
+            <td class="color-pink">
+              <span class="subject-name"> <br>Töri</span>
+
+            </td>
+            <td class="color-blue">
+              <span class="subject-name"><br>Tesi</span>
+            </td>
+            <td class="color-green">
+              <span class="subject-name"><br>Tesi</span>
+
+            </td>
+
+            <td></td>
+          </tr>
+          <tr>
+            <td class="day-label">Szerda</td>
+            <td class="color-blue">
+              <span class="subject-name"><br> <br>Kktt</span>
+            </td>
+            <td class="color-orange">
+              <span class="subject-name"> <br><br>Magy</span>
+            </td>
+            <td class="color-blue">
+              <span class="subject-name"> <br><br>Magy</span>
+            </td>
+            <td class="color-blue">
+              <span class="subject-name">Ang</span>
+              <br>
+              <span class="subject-name">Ang
+              </span>
+              <br>
+              <span class="subject-name">Ném</span>
+
+            </td>
+            <td class="color-blue">
+              <span class="subject-name"><br> <br> Honv</span>
+            </td>
+            <td class="color-yellow">
+              <span class="subject-name">Progal2</span>
+              <span class="subject-name">Ita i Inf2</span>
+              <span class="subject-name">Progal2</span>
+              <span class="subject-name">Gépalgy</span>
+              <span class="subject-name">Villalap</span>
+            </td>
+            <td class="color-yellow">
+              <span class="subject-name">Progal2</span>
+              <span class="subject-name">Ita i Inf2</span>
+              <span class="subject-name">Progal2</span>
+              <span class="subject-name">Gépalgy</span>
+              <span class="subject-name">Villalap</span>
+
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="day-label">Csütörtök</td>
+            <td class="color-yellow">
+              <span class="subject-name"> <br><br>Töri</span>
+            </td>
+            <td class="color-green">
+              <span class="subject-name"> <br><br>Ofő</span>
+            </td>
+            <td class="color-orange">
+              <span class="subject-name">Ang</span>
+              <br>
+              <span class="subject-name">Ang</span>
+              <br>
+              <span class="subject-name">Ném</span>
+            </td>
+            <td class="color-green">
+              <span class="subject-name"><br> <br>Magy</span>
+            </td>
+            <td class="color-blue">
+              <span class="subject-name"> <br> <br> Tesi</span>
+            </td>
+            <td class="color-green">
+              <span class="subject-name"> <br> <br>Fiz</span>
+            </td>
+            <td class="color-blue">
+              <span class="subject-name"> <br>Mat <br> <br> Mat</span>
+            </td>
+
+          </tr>
+          <tr>
+            <td class="day-label">Péntek</td>
+            <td class="color-yellow">
+              <span class="subject-name">Ita i ele</span>
+            </td>
+            <td class="color-yellow">
+              <span class="subject-name">Kktt</span>
+            </td>
+            <td class="color-green">
+              <span class="subject-name">Tesi</span>
+            </td>
+            <td class="color-blue">
+              <span class="subject-name">Ang</span>
+            </td>
+            <td class="color-green">
+              <span class="subject-name">Mat</span>
+            </td>
+            <td class="color-green">
+              <span class="subject-name">Magy</span>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
       </table>
-  </div>
+    </div>
   </body>
+
 </html>
