@@ -14,7 +14,7 @@ body {
 }
 table{
     background-color: white;
-    float: right;
+    float: center;
     margin-right: 500px;
 }
 table, td, tr{
