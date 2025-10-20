@@ -1,44 +1,130 @@
-
 body {
-    background-color: #1b263b;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  #kartya1 {
-    max-width: 1800px;
-    margin: 100px auto auto auto;
-  }
-#osztalyokDiv{
-    width: 300px;
-    margin: 10px auto 10px auto;
-}
-table{
-    background-color: white;
-    float: center;
-    margin-right: 500px;
-}
-table, td, tr{
-    border-style: solid;
-            border-width: 2px;
-            border-collapse: collapse;
-            font-size: 20px;
-            border-color: #eceef1;
-            background-color:  #ffffff;
+  background-color: #1b263b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
 }
 
-td{
-            padding: 5px;
-            width:100px;
-            text-align: center;
-        }
-a{
+#kartya1 {
+  max-width: 1800px;
+  margin: 100px auto auto auto;
+}
+
+#osztalyokDiv {
+  width: 300px;
+  margin: 10px auto 10px auto;
+}
+
+table {
+  margin-right: 500px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table,
+td,
+tr {
+  border-style: solid;
+  border-width: 2px;
+  border-collapse: collapse;
+  font-size: 20px;
+  border-color: #eceef1;
+  background-color: #ffffff;
+}
+
+td {
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+a {
   text-decoration: none;
   color: black;
 }
-h1{
+
+h1 {
   color: white;
   text-align: center;
 }
-#vmi4{
+
+#vmi4 {
   float: left;
+}
+
+.timetable-container {
+  overflow-x: auto;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  height: 70px;
+  vertical-align: top;
+}
+
+th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.time-slot {
+  width: 70px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.day-label {
+  width: 40px;
+  background-color: #f0f0f0 !important;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.color-blue {
+  background-color: #9cd5f5;
+}
+
+.color-green {
+  background-color: #b8e7b8;
+}
+
+.color-yellow {
+  background-color: #ffe08a;
+}
+
+.color-purple {
+  background-color: #d1b3e8;
+}
+
+.color-red {
+  background-color: #ffb5b5;
+}
+
+.color-pink {
+  background-color: #f7c3e2;
+}
+
+.color-orange {
+  background-color: #ffc999;
+}
+
+.subject-name {
+  font-weight: bold;
+  font-size: 17px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.teacher-classroom {
+  font-size: 9px;
+  display: block;
+  line-height: 1.1;
 }
