@@ -1,0 +1,9 @@
+.osztalyokOszlop{
+    width: 500px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
